@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { StatsboardComponent } from './statsboard/statsboard.component';
+import { Ng2SmartTableModule } from 'ng2-smart-table';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { StatsboardComponent } from './statsboard/statsboard.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    Ng2SmartTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { InfoService } from '../services/info.service';
 
 @Component({
   selector: 'app-statsboard',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StatsboardComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private infoService: InfoService
+  ) { }
 
   ngOnInit() {
+    this.infoService.doStuff();
   }
 
 }
